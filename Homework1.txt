@@ -48,9 +48,9 @@ Task 4
 var sum = 0;
 
 function sumNumb (arr){
-	let [a, , ...difArr] = arr;
+	let [, a, ...difArr] = arr;
 	sum += a;
-	difArr[0] ? sumNumb(difArr) : ''
+	difArr[1] ? sumNumb(difArr) : ''
 }
 
 sumNumb([1,2,1,2,1,2,1,2])
